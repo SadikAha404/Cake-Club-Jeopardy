@@ -1,0 +1,170 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  background-color: #fdfce4;
+  background-image: url("images/Background.jpg");
+  overflow-x:hidden;
+  
+}
+html{
+  overflow-y: hidden;
+}
+
+.container {
+  max-width: 100%;
+  text-align: center;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-gap: 5px;
+  margin-top: 5px;
+  padding: 15px;
+}
+
+#Catagory{
+  height:100px;
+  background-color: #f14d4e;
+  color: #fff;
+  border-radius: 7px;
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  padding: 20px;
+
+}
+
+#Value{
+  height:80px;
+  background-color: #eaba95;
+  color: #fff;
+  padding: 30px;
+  border-radius: 7px;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 3px;
+  margin-bottom: 3px;
+
+}
+
+button{
+  display: inline-block;
+  padding: 5px;
+  text-decoration: none;
+  font-size: 30px;
+  background: #ffe5ea;
+  border-radius: 10px;
+  text-shadow: 2px 0 #232931;
+}
+
+.popMean .overlay{
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+  display: none;
+}
+.popMean .content{
+  position: absolute;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%, -50%)scale(0);
+  background: #ed5150;
+  width: 80%;
+  height: 60%;
+  z-index: 2;
+  text-align: center; 
+  font-size: 50px;
+  color:#ffffff;;
+  font-family: "Lobster", cursive;
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 20px;
+}
+.popMean .close-btn{
+  cursor: pointer;
+position : absolute ;
+right:20px;
+top:20px;
+width:30px;
+height: 30px;
+background : #222;
+color:#fff;
+font-size : 25px;
+font-weight :600;
+line-height : 30px;
+text-align : center;
+border-radius : 50%;
+}
+
+.popMean.active .overlay{
+  display: block;
+}
+.popMean.active .content{
+  transition: all 300ms ease-in-out;
+  transform: translate(-50%,-50%)scale(1);
+}
+
+
+.crossout::before, .overlay::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: red;
+}
+
+.crossout::before {
+  transform: rotate(45deg);
+}
+
+.crossout::after {
+  transform: rotate(-45deg);
+}
+
+.scoreboard {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 95%;
+    margin: 1px auto;
+    padding: 1px;
+    background-color: #fde5ea;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.team {
+    flex: 0 0 23%;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.team-name {
+    font-weight: bold;
+    margin-bottom: 2px;
+}
+.score {
+    font-size: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.score input {
+    width: 100px;
+    text-align: center;
+}
+.score button {
+    background-color: #fb795e;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.score button:hover {
+    background-color: #fde5ea;
+}

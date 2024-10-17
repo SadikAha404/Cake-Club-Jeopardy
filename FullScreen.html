@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="FullScreen.css" rel="stylesheet" type="text/css" />
+</head>
+<body onload="startGame()">
+  <div id="container">
+    <div class="board" id="board"></div>
+  </div>
+
+  <div class="scoreboard">
+      <div class="team">
+          <div class="team-name">Team 1</div>
+          <div class="score">
+              <button onclick="decrementScore(1, 100)">-</button>
+              <input type="number" id="team1-score" value="0">
+              <button onclick="incrementScore(1, 100)">+</button>
+          </div>
+      </div>
+      <div class="team">
+          <div class="team-name">Team 2</div>
+          <div class="score">
+              <button onclick="decrementScore(2, 100)">-</button>
+              <input type="number" id="team2-score" value="0">
+              <button onclick="incrementScore(2, 100)">+</button>
+          </div>
+      </div>
+      <div class="team">
+          <div class="team-name">Team 3</div>
+          <div class="score">
+              <button onclick="decrementScore(3, 100)">-</button>
+              <input type="number" id="team3-score" value="0">
+              <button onclick="incrementScore(3, 100)">+</button>
+          </div>
+      </div>
+      <div class="team">
+          <div class="team-name">Team 4</div>
+          <div class="score">
+              <button onclick="decrementScore(4, 100)">-</button>
+              <input type="number" id="team4-score" value="0">
+              <button onclick="incrementScore(4, 100)">+</button>
+          </div>
+      </div>
+      <div class="team">
+          <div class="team-name">Team 5</div>
+          <div class="score">
+              <button onclick="decrementScore(5, 100)">-</button>
+              <input type="number" id="team5-score" value="0">
+              <button onclick="incrementScore(5, 100)">+</button>
+          </div>
+      </div>
+      <div class="team">
+          <div class="team-name">Team 6</div>
+          <div class="score">
+              <button onclick="decrementScore(6, 100)">-</button>
+              <input type="number" id="team6-score" value="0">
+              <button onclick="incrementScore(6, 100)">+</button>
+          </div>
+      </div>
+      <div class="team">
+          <div class="team-name">Team 7</div>
+          <div class="score">
+              <button onclick="decrementScore(7, 100)">-</button>
+              <input type="number" id="team7-score" value="0">
+              <button onclick="incrementScore(7, 100)">+</button>
+          </div>
+      </div>
+      <div class="team">
+          <div class="team-name">Team 8</div>
+          <div class="score">
+              <button onclick="decrementScore(8, 100)">-</button>
+              <input type="number" id="team8-score" value="0">
+              <button onclick="incrementScore(8, 100)">+</button>
+          </div>
+      </div>
+  </div>
+
+
+
+  <div class="popMean" id="popup-1">
+    <div class="overlay"></div>
+    <div class="content">
+      <div class="close-btn" onclick="toggleMean()">&times;
+      </div>
+      <p id = "question">
+
+      </p>
+
+    </div>
+  </div>
+  <script src="FullScreen.js"></script>
+</body>
+</html>

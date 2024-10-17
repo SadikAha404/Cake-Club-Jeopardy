@@ -1,0 +1,278 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  background-color: #fdfce4;
+  background-image: url("images/Background.jpg");
+  
+}
+
+.container {
+    width: 100%;
+    min-width: 100vh;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+
+  .navBar{
+    margin-top: 0%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: #fee5ea;
+    border-radius: 25px;
+  }
+  .logo{
+    width: 100px;
+    margin: 30px 0;
+  }
+  .cartIcon{
+    width: 100px;
+  }
+  nav{
+    flex: 1;
+    text-align: right;
+  }
+
+  nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 30px;
+  }
+  nav ul li a{
+    text-decoration: none;
+    color: #000;
+    font-family: "Lobster", cursive;
+    font-size: 14px;
+  }
+nav ul li a:hover{
+    color: #00bfff;
+  }
+
+h1{
+  font-family: "Lobster", cursive;
+  font-size: 50px;
+  margin-bottom: 30px;
+}
+.main{
+  text-align: center;
+  font-family:"Lobster", cursive;
+  font-size: 30px;
+}
+
+
+button{
+  display: inline-block;
+  padding: 5px;
+  text-decoration: none;
+  font-size: 30px;
+  background: #ffe5ea;
+  border-radius: 10px;
+  text-shadow: 2px 0 #232931;
+}
+
+.fullList{
+  display: grid;
+  place-items: center;
+}
+
+
+.layer1{
+  margin-top: 30px;
+  width: 600px;
+  background-color: #ECB994;
+  border: 20px solid #000000;
+  padding: 20px;
+  border-radius: 30px;
+}
+.listTitle{
+  font-size: 30px;
+margin-top: auto;
+}
+
+.layer2{
+  background-color: #ffffff;
+  border: 20px solid #000000;
+  padding: 5px;
+  margin-top: auto;
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 30px;
+}
+
+.listCart{
+  width: 150px;
+  height: 114px;
+}
+
+.mainList{
+display: flex;
+align-items: center;
+justify-content: space-between;
+margin-bottom: 10px;
+}
+
+#list{
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 10px;
+}
+
+#item {
+  font-family:"Lobster", cursive;
+  width: 150px;
+  font-size: 25px;
+  border-radius:10px;
+  border: solid gray 2px;
+  padding:5px;
+}
+
+
+.layer2 button{
+  font-size: 15px;
+  text-shadow: none;
+  float: right;
+  width: 70px;
+  margin-top: 3px;
+}
+.pricing{
+  margin-top: 1px;
+  text-decoration: none;
+  font-size: 12px;
+  font-family: "Lobster", cursive;
+  text-align: center;
+}
+.pricing a{
+  color:#f14d4e;
+  margin: 2px;
+  text-decoration: none;
+}
+
+.pricing a:hover{
+    color: #00bfff;
+  }
+
+.container {
+  max-width: 95%;
+  margin: 50px auto;
+  text-align: center;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-gap: 5px;
+  margin-top: 5px;
+  
+}
+
+#Catagory{
+  height:auto;
+  background-color: #f14d4e;
+  color: #fff;
+  border-radius: 7px;
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+}
+
+#Value{
+  background-color: #fde5ea;
+  color: #fff;
+  padding: 30px;
+  border-radius: 7px;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
+
+.cell {
+  background-color: #ddd;
+  padding: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.start-btn {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.start-btn:hover {
+  background-color: #0056b3;
+}
+
+.popMean .overlay{
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+  display: none;
+}
+.popMean .content{
+  position: absolute;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%, -50%)scale(0);
+  background: #ed5150;
+  width: 80%;
+  height: 60%;
+  z-index: 2;
+  text-align: center;
+  color:#232931;;
+  font-family: "Lobster", cursive;
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 20px;
+}
+.popMean .close-btn{
+  cursor: pointer;
+position : absolute ;
+right:20px;
+top:20px;
+width:30px;
+height: 30px;
+background : #222;
+color:#fff;
+font-size : 25px;
+font-weight :600;
+line-height : 30px;
+text-align : center;
+border-radius : 50%;
+}
+
+.popMean.active .overlay{
+  display: block;
+}
+.popMean.active .content{
+  transition: all 300ms ease-in-out;
+  transform: translate(-50%,-50%)scale(1);
+}
+
+
+.crossout::before, .overlay::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: red;
+}
+
+.crossout::before {
+  transform: rotate(45deg);
+}
+
+.crossout::after {
+  transform: rotate(-45deg);
+}
